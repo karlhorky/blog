@@ -1,6 +1,7 @@
-import { HOME_OG_IMAGE_URL } from "@/lib/constants";
-import type { Metadata } from "next";
-import "./globals.css";
+import './globals.css';
+import { HOME_OG_IMAGE_URL } from '@/lib/constants';
+import type { Metadata } from 'next';
+import { ThemeProvider } from './_components/ThemeProvider';
 
 export const metadata: Metadata = {
   title: `firstlast.dev`,
@@ -16,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/kfx0vct.css" />
         <link
@@ -52,7 +53,9 @@ export default function RootLayout({
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
       <body>
-        <div className="min-h-screen">{children}</div>
+        <ThemeProvider>
+          <div className="min-h-screen">{children}</div>
+        </ThemeProvider>
       </body>
     </html>
   );
