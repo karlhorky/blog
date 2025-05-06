@@ -1,5 +1,6 @@
 ---
-title: 'Maintainer Month: Karl Horky'
+title2: 'Maintainer Month: Karl Horky'
+title: 'Papercut-Driven-Development'
 excerpt: 'GitHub is a web-based platform for version control and collaboration. It allows developers to store, manage, track, and control changes to their code projects using the Git version control system.'
 date: '2025-05-06'
 ---
