@@ -1,21 +1,19 @@
 import './globals.css';
-import { HOME_OG_IMAGE_URL } from '@/lib/constants';
 import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
 import { ThemeProvider } from './_components/ThemeProvider';
 
 export const metadata: Metadata = {
-  title: `firstlast.dev`,
-  description: `Best tech blog`,
+  title: `Karl Horky's Blog`,
+  description: `Tech education: curriculum design, open source, community building`,
   openGraph: {
-    images: [HOME_OG_IMAGE_URL],
+    images: [
+      'https://og-image.vercel.app/Next.js%20Blog%20Starter%20Example.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg',
+    ],
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>

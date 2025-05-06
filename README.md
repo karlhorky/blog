@@ -1,7 +1,9 @@
-# minimal-blog-starter
-A minimal remake of the [next.js blog starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) using tailwind css and shadcn/ui. Inspired by the [tailwind blog](https://tailwindcss.com/blog) and [shadcn website](https://ui.shadcn.com/).
+# Blog
 
-Visit: [https://minimal-blog-starter.vercel.app/](https://minimal-blog-starter.vercel.app/)
+A minimal blog for [@karlhorky](https://github.com/karlhorky)
 
-![Screenshot of my blog](./.github/blog_screenshot.png)
+## Credit
 
+Thanks to the following projects for inspiration and code:
+
+- Starter https://github.com/skaparelos/minimal-blog-starter

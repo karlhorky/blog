@@ -12,32 +12,32 @@ type Props = {
 
 export function PostPreview({ key, title, date, excerpt, slug }: Props) {
   return (
-    <article key={`article-${key}`} className="relative group">
-      <div className="absolute -inset-y-2.5 -inset-x-4 md:-inset-y-4 md:-inset-x-6 sm:rounded-2xl bg-card group-hover:bg-muted transition-colors" />
-      <Dot className="hidden absolute right-full mr-6 top-2 text-muted-foreground md:mr-12 w-[calc(0.5rem+1px)] h-[calc(0.5rem+1px)] overflow-visible sm:block" />
+    <article key={`article-${key}`} className="group relative">
+      <div className="bg-card group-hover:bg-muted absolute -inset-x-4 -inset-y-2.5 transition-colors sm:rounded-2xl md:-inset-x-6 md:-inset-y-4" />
+      <Dot className="text-muted-foreground absolute top-2 right-full mr-6 hidden h-[calc(0.5rem+1px)] w-[calc(0.5rem+1px)] overflow-visible sm:block md:mr-12" />
       <div className="relative">
-        <h3 className="text-base font-semibold tracking-tight text-foreground pt-8 lg:pt-0">
+        <h3 className="text-foreground pt-8 text-base font-semibold tracking-tight lg:pt-0">
           {title}
         </h3>
-        <div className="mt-2 mb-4 prose prose-slate prose-a:relative prose-a:z-10 line-clamp-2 text-foreground">
+        <div className="prose prose-slate prose-a:relative prose-a:z-10 text-foreground mt-2 mb-4 line-clamp-2">
           {excerpt}
         </div>
-        <dl className="absolute left-0 top-0 lg:left-auto lg:right-full lg:mr-[calc(6.5rem+1px)]">
+        <dl className="absolute top-0 left-0 lg:right-full lg:left-auto lg:mr-[calc(6.5rem+1px)]">
           <dt className="sr-only">Date</dt>
-          <dd className="whitespace-nowrap text-sm leading-6 text-muted-foreground">
+          <dd className="text-muted-foreground text-sm leading-6 whitespace-nowrap">
             <DateFormatter dateString={date} />
           </dd>
         </dl>
       </div>
       <Link
         href={`/posts/${slug}`}
-        className="flex items-center text-sm font-medium text-foreground hover:text-primary"
+        className="text-foreground hover:text-primary flex items-center text-sm font-medium"
       >
-        <span className="absolute -inset-y-2.5 -inset-x-4 md:-inset-y-4 md:-inset-x-6 sm:rounded-2xl" />
+        <span className="absolute -inset-x-4 -inset-y-2.5 sm:rounded-2xl md:-inset-x-6 md:-inset-y-4" />
         <span className="relative">
           Read more<span className="sr-only">, {title}</span>
         </span>
-        <RightArrow className="relative mt-px overflow-visible ml-2.5" />
+        <RightArrow className="relative mt-px ml-2.5 overflow-visible" />
       </Link>
     </article>
   );
