@@ -82,6 +82,10 @@
   }
 }
 
+button {
+  @apply cursor-pointer;
+}
+
 @layer utilities {
   * {
     font-family: sofia-pro, sans-serif;
