@@ -7,10 +7,13 @@
       {
         "name": "next"
       }
-    ]
-  },
-  "paths": {
-    "@/*": ["./src/*"]
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "jsx": "preserve"
   },
   "include": [
     "**/*.ts",
