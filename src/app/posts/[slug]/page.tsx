@@ -27,7 +27,7 @@ export default async function Post(props: Params) {
           <div className="col-span-5 md:col-span-1">
             <div className="pt-8">
               <Link href="/">
-                <p className="text-sm text-slate-400">← Back to Blog</p>
+                <p className="text-sm text-muted-foreground">← Back to Blog</p>
               </Link>
             </div>
           </div>
