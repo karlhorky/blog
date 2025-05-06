@@ -12,10 +12,10 @@ export default function Index() {
       <Container>
         <div className="py-16 sm:text-center">
           <h1 className="mb-4 text-3xl sm:text-4xl tracking-tight text-foreground font-extrabold">
-            Firstname Lastname
+            Karl Horky
           </h1>
           <h2 className="text-lg text-foreground">
-            I write about building software. Previously at X, and Y.
+            Tech education: curriculum design, open source, community building
           </h2>
         </div>
 

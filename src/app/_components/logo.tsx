@@ -1,13 +1,9 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-const Logo = () => {
+export default function Logo() {
   return (
     <Link href="/" className="mr-6 flex items-center space-x-2">
-      <span className="font-bold">
-        firstlast.dev
-      </span>
+      <span className="font-bold">@karlhorky</span>
     </Link>
   );
-};
-
-export default Logo;
+}

@@ -26,11 +26,23 @@ export default function Header() {
             </Link>
             <Link
               href="https://github.com/karlhorky"
+              target="_blank"
+              rel="noopener noreferrer"
               className={cn(
                 'text-foreground/60 transition-colors hover:text-foreground/80',
               )}
             >
               GitHub
+            </Link>
+            <Link
+              href="https://bsky.app/profile/karlhorky.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn(
+                'text-foreground/60 transition-colors hover:text-foreground/80',
+              )}
+            >
+              Bluesky
             </Link>
           </nav>
         </div>
