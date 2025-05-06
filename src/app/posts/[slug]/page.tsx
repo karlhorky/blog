@@ -8,7 +8,8 @@ import { PostBody } from "@/app/_components/post-body";
 import { PostHeader } from "@/app/_components/post-header";
 import Link from "next/link";
 
-export default async function Post({ params }: Params) {
+export default async function Post(props: Params) {
+  const params = await props.params;
   const post = getPostBySlug(params.slug);
 
   if (!post) {
@@ -51,12 +52,13 @@ export default async function Post({ params }: Params) {
 }
 
 type Params = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
-export function generateMetadata({ params }: Params): Metadata {
+export async function generateMetadata(props: Params): Promise<Metadata> {
+  const params = await props.params;
   const post = getPostBySlug(params.slug);
 
   if (!post) {
