@@ -10,7 +10,7 @@ import { ThemeSwitcher } from './ThemeSwitcher';
 export default function Header() {
   const pathname = usePathname();
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur-sm supports-backdrop-filter:bg-background/60">
+    <header className="border-border/40 bg-background/95 supports-backdrop-filter:bg-background/60 sticky top-0 z-50 w-full border-b backdrop-blur-sm">
       <div className="container flex h-14 max-w-(--breakpoint-2xl) items-center justify-between">
         <div className="mr-4 flex">
           <Logo />
@@ -18,7 +18,7 @@ export default function Header() {
             <Link
               href="/"
               className={cn(
-                'transition-colors hover:text-foreground/80',
+                'hover:text-foreground/80 transition-colors',
                 pathname === '/blog' ? 'text-foreground' : 'text-foreground/60',
               )}
             >
@@ -29,7 +29,7 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               className={cn(
-                'text-foreground/60 transition-colors hover:text-foreground/80',
+                'text-foreground/60 hover:text-foreground/80 transition-colors',
               )}
             >
               GitHub
@@ -39,7 +39,7 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               className={cn(
-                'text-foreground/60 transition-colors hover:text-foreground/80',
+                'text-foreground/60 hover:text-foreground/80 transition-colors',
               )}
             >
               Bluesky

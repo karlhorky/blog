@@ -16,7 +16,7 @@ export function MainNav() {
         <Link
           href="/"
           className={cn(
-            'transition-colors hover:text-foreground/80',
+            'hover:text-foreground/80 transition-colors',
             pathname === '/blog' ? 'text-foreground' : 'text-foreground/60',
           )}
         >
@@ -25,7 +25,7 @@ export function MainNav() {
         <Link
           href="https://github.com/karlhorky"
           className={cn(
-            'text-foreground/60 transition-colors hover:text-foreground/80',
+            'text-foreground/60 hover:text-foreground/80 transition-colors',
           )}
         >
           GitHub
