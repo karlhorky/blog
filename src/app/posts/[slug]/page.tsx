@@ -13,7 +13,7 @@ export default async function Post(props: Params) {
   const post = getPostBySlug(params.slug);
 
   if (!post) {
-    return notFound();
+    notFound();
   }
 
   const content = await markdownToHtml(post.content || '');
@@ -41,7 +41,7 @@ export default async function Post(props: Params) {
           </div>
 
           {/* right sidebar */}
-          <div className="col-span-5 md:col-span-1"></div>
+          <div className="col-span-5 md:col-span-1" />
         </div>
       </Container>
     </main>
@@ -59,7 +59,7 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
   const post = getPostBySlug(params.slug);
 
   if (!post) {
-    return notFound();
+    notFound();
   }
 
   const title = `${post.title} | firstlast.dev`;
@@ -71,7 +71,7 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
   };
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   const posts = getAllPosts();
 
   return posts.map((post) => ({
