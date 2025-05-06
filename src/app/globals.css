@@ -173,7 +173,7 @@
 } */
 
 .markdown ul {
-  @apply leading-7 my-6;
+  @apply leading-7 my-6 ml-6 list-disc [&>li]:mt-2;
 }
 
 .markdown p {
@@ -182,10 +182,6 @@
 
 .markdown blockquote {
   @apply mt-6 border-l-2 pl-6 italic;
-}
-
-.markdown ul {
-  @apply my-6 ml-6 list-disc [&>li]:mt-2;
 }
 
 .markdown h1 {

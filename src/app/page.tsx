@@ -24,7 +24,7 @@ export default function Index() {
 
           <div className="space-y-16">
             {allPosts.map((post) => (
-              <PostPreview key={post.slug} {...post} />
+              <PostPreview key={`post-preview-${post.slug}`} {...post} />
             ))}
           </div>
         </div>

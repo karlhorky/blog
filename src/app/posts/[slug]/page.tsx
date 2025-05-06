@@ -1,29 +1,28 @@
-import { Metadata } from "next";
-import { notFound } from "next/navigation";
-import { getAllPosts, getPostBySlug } from "@/lib/api";
-import markdownToHtml from "@/lib/markdownToHtml";
-import Container from "@/app/_components/container";
-import Header from "@/app/_components/header";
-import { PostBody } from "@/app/_components/post-body";
-import { PostHeader } from "@/app/_components/post-header";
-import Link from "next/link";
+import Container from '@/app/_components/container';
+import Header from '@/app/_components/header';
+import { PostBody } from '@/app/_components/post-body';
+import { PostHeader } from '@/app/_components/post-header';
+import { getAllPosts, getPostBySlug } from '@/lib/api';
+import markdownToHtml from '@/lib/markdownToHtml';
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
 
 export default async function Post(props: Params) {
   const params = await props.params;
   const post = getPostBySlug(params.slug);
 
   if (!post) {
-    return notFound();
+    notFound();
   }
 
-  const content = await markdownToHtml(post.content || "");
+  const content = await markdownToHtml(post.content || '');
 
   return (
     <main>
       <Header />
       <Container>
         <div className="grid grid-cols-5 gap-6 md:gap-12 pt-32">
-
           {/* left sidebar */}
           <div className="col-span-5 md:col-span-1">
             <div className="pt-8">
@@ -42,12 +41,10 @@ export default async function Post(props: Params) {
           </div>
 
           {/* right sidebar */}
-          <div className="col-span-5 md:col-span-1" >
-          </div>
-
+          <div className="col-span-5 md:col-span-1" />
         </div>
       </Container>
-    </main >
+    </main>
   );
 }
 
@@ -62,7 +59,7 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
   const post = getPostBySlug(params.slug);
 
   if (!post) {
-    return notFound();
+    notFound();
   }
 
   const title = `${post.title} | firstlast.dev`;
@@ -74,7 +71,7 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
   };
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   const posts = getAllPosts();
 
   return posts.map((post) => ({
