@@ -8,7 +8,32 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
-export default async function Post(props: Params) {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params;
+  const post = getPostBySlug(params.slug);
+
+  if (!post) {
+    notFound();
+  }
+
+  const title = `${post.title} | firstlast.dev`;
+
+  return {
+    title,
+    description: post.excerpt,
+    openGraph: {
+      title,
+    },
+  };
+}
+
+type Props = {
+  params: Promise<{
+    slug: string;
+  }>;
+};
+
+export default async function Post(props: Props) {
   const params = await props.params;
   const post = getPostBySlug(params.slug);
 
@@ -22,12 +47,12 @@ export default async function Post(props: Params) {
     <main>
       <Header />
       <Container>
-        <div className="grid grid-cols-5 gap-6 md:gap-12 pt-32">
+        <div className="grid grid-cols-5 gap-6 pt-32 md:gap-12">
           {/* left sidebar */}
           <div className="col-span-5 md:col-span-1">
             <div className="pt-8">
               <Link href="/">
-                <p className="text-sm text-muted-foreground">← Back to Blog</p>
+                <p className="text-muted-foreground text-sm">← Back to Blog</p>
               </Link>
             </div>
           </div>
@@ -46,29 +71,6 @@ export default async function Post(props: Params) {
       </Container>
     </main>
   );
-}
-
-type Params = {
-  params: Promise<{
-    slug: string;
-  }>;
-};
-
-export async function generateMetadata(props: Params): Promise<Metadata> {
-  const params = await props.params;
-  const post = getPostBySlug(params.slug);
-
-  if (!post) {
-    notFound();
-  }
-
-  const title = `${post.title} | firstlast.dev`;
-
-  return {
-    openGraph: {
-      title,
-    },
-  };
 }
 
 export function generateStaticParams() {

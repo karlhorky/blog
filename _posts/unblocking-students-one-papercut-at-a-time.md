@@ -14,9 +14,15 @@ The following article is also published by the Open Source Initiative on OpenSou
   - problem
   - solution
 
+Hi, I'm Karl Horky ([GitHub](https://github.com/karlhorky), [LinkedIn](https://www.linkedin.com/in/karlhorky/)), Technical Founder at [UpLeveled](https://upleveled.io).
+
+In an educational landscape of AI-generated solutions, disconnected islands of knowledge, I focus on helping students level up by designing accessible curricula and contributing to open source.
+
 ## (Short) history + what I do now
 
-- Perl, PHP, Python, JavaScript
+I've been at the open source game for over 13 years, and in tech for 25+.
+
+- Perl, PHP, Python, Ruby on Rails, JavaScript
 - now mostly TypeScript, React, Next.js, Node.js, SQL
 - interested in SQL-in-JS tooling like SafeQL, prettier-plugin-embed, Postgres.js
 
@@ -79,3 +85,7 @@ The following article is also published by the Open Source Initiative on OpenSou
     - sometimes, in order to be clear, you have to present a simplified version of the truth
   - don't try to avoid repetition
   - use running examples and playgrounds
+
+## Thanks
+
+Thanks to the Open Source Initiative and Nick Vidal for collaborating on Maintainer Month and showcasing maintainers through this and other articles.
