@@ -141,7 +141,7 @@ button {
     --popover-foreground: 210 40% 98%;
 
     --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 75%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -170,8 +170,16 @@ button {
     @apply bg-background text-foreground;
   }
 
+  a {
+    @apply hover:text-primary-foreground underline-offset-4 transition-colors;
+  }
+
+  article a {
+    @apply underline;
+  }
+
   p {
-    @apply my-8;
+    @apply my-5;
   }
 }
 
@@ -184,7 +192,7 @@ button {
 }
 
 .markdown p {
-  @apply text-foreground mt-6 leading-7;
+  @apply text-foreground leading-7;
 }
 
 .markdown blockquote {

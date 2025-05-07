@@ -1,7 +1,5 @@
 import Container from '@/app/_components/container';
 import Header from '@/app/_components/header';
-import { PostBody } from '@/app/_components/post-body';
-import { PostHeader } from '@/app/_components/post-header';
 import { getAllPosts, getPostBySlug } from '@/lib/api';
 import markdownToHtml from '@/lib/markdownToHtml';
 import type { Metadata } from 'next';
@@ -48,7 +46,6 @@ export default async function Post(props: Props) {
       <Header />
       <Container>
         <div className="grid grid-cols-5 gap-6 pt-32 md:gap-12">
-          {/* left sidebar */}
           <div className="col-span-5 md:col-span-1">
             <div className="pt-8">
               <Link href="/">
@@ -57,15 +54,22 @@ export default async function Post(props: Props) {
             </div>
           </div>
 
-          {/* middle */}
           <div className="col-span-5 md:col-span-3">
             <article className="pb-32">
-              <PostHeader title={post.title} />
-              <PostBody content={content} />
+              <div className="flex justify-center">
+                <h1 className="text-foreground scroll-m-20 pt-2 pb-8 text-4xl font-extrabold tracking-tight lg:text-5xl">
+                  {post.title}
+                </h1>
+              </div>
+              <div className="mx-auto max-w-xl">
+                <div
+                  className="markdown"
+                  dangerouslySetInnerHTML={{ __html: content }}
+                />
+              </div>
             </article>
           </div>
 
-          {/* right sidebar */}
           <div className="col-span-5 md:col-span-1" />
         </div>
       </Container>
