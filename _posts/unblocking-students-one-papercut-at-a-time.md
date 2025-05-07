@@ -40,7 +40,7 @@ Through my work in education, I've become interested in:
   safe and correct software, eg. by using static analysis
 - patterns to reduce abstraction and indirection in code
 
-### UpLeveled
+## UpLeveled and Open Source
 
 My work at UpLeveled has focused on designing, developing and delivering accessible curricula for both beginners and more experienced engineers, including promoting getting involved in open source.
 
@@ -51,7 +51,7 @@ Our curricula are also supported by open source projects which we maintain:
 - [System Setup](https://github.com/upleveled/system-setup): Windows, macOS and Linux setup guides
 - numerous example repositories like [Examples of Broken Security with Next.js + Postgres.js](https://github.com/upleveled/security-vulnerability-examples-next-js-postgres) and [UpLeveled Next.js example - Winter 2025](https://github.com/upleveled/next-js-example-winter-2025-eu)
 
-### Papercuts
+## Papercuts
 
 In addition to our own projects, UpLeveled also lives what we teach and aims to be good open source citizens by contributing to other projects when we encounter problems.
 
@@ -66,7 +66,9 @@ These papercuts can include errors during setup steps, documentation issues, sma
 
 By fixing these papercuts, we can help students focus on learning and building projects, and raise all boats by contributing the fix to everyone else.
 
-### Contribute widely. Mostly shallow.
+## Contribute widely. Mostly shallow.
+
+TODO: Remove? I guess not, but what's the point of the section? I guess it's about telling more of my open source story (linking to the example contributions and giving tips for getting the contribution).
 
 - "mostly shallow contributions": amount of time in the day
 - superpower: matching the style and philosophy of the project,
