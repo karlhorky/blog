@@ -1,10 +1,13 @@
 import Container from '@/app/_components/container';
 import Header from '@/app/_components/header';
 import { getAllPosts, getPostBySlug } from '@/lib/api';
-import markdownToHtml from '@/lib/markdownToHtml';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import rehypeExternalLinks from 'rehype-external-links';
+import rehypeStringify from 'rehype-stringify';
+import { remark } from 'remark';
+import remarkRehype from 'remark-rehype';
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const params = await props.params;
@@ -39,7 +42,17 @@ export default async function Post(props: Props) {
     notFound();
   }
 
-  const content = await markdownToHtml(post.content || '');
+  const content = (
+    await remark()
+      .use(remarkRehype)
+      .use(rehypeExternalLinks, {
+        content: { type: 'text', value: ' ↗' },
+        target: '_blank',
+        rel: ['noopener', 'noreferrer'],
+      })
+      .use(rehypeStringify)
+      .process(post.content)
+  ).toString();
 
   return (
     <main>

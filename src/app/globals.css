@@ -189,6 +189,10 @@ button {
   ol li {
     @apply list-decimal;
   }
+
+  li {
+    @apply mt-2;
+  }
 }
 
 .markdown {
@@ -196,7 +200,7 @@ button {
 }
 
 .markdown ul {
-  @apply my-6 ml-6 list-disc leading-7 [&>li]:mt-2;
+  @apply my-6 ml-6 list-disc leading-7;
 }
 
 .markdown ul ul {
