@@ -245,7 +245,7 @@ Here are my more personal field notes for contributors:
    - think through the problem and provide a guess of what the
      problem might be near the end of the issue
 
-## Wishes from Maintainers
+## Suggestions for Maintainers
 
 During my time contributing to open source, I have also developed
 opinions on how projects can optimize their CX (Contributor
