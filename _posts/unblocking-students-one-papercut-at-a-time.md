@@ -1,6 +1,7 @@
 ---
-title: 'Unblocking Students, One Papercut at a Time'
-excerpt: 'Small bugs in open source might seem not worth fixing, but for students, they can be real blockers. By reporting and fixing these “papercuts” in open source projects, I aim to remove barriers so students can focus on learning.'
+title: 'Unblocking Students and Evolving the Ecosystem'
+excerpt2: 'Small bugs in open source might seem not worth fixing, but for students, they can be real blockers. By reporting and fixing these “papercuts” in open source projects, I aim to remove barriers so students can focus on learning.'
+excerpt: 'My effort to fix small bugs (papercuts) and support ecosystem, with an aim of removing barriers for students and encouraging open source adoption'
 date: '2025-05-06'
 ---
 
@@ -130,8 +131,8 @@ update:
 ## Supporting Ecosystem Evolution
 
 Over the long term, another goal of UpLeveled is to help evolve
-the ecosystem, by extending compatibility, encouraging adoption
-of new technologies and discussing new standards proposals.
+the ecosystem by extending compatibility, encouraging adoption of
+new technologies and discussing new standards proposals.
 
 Extending compatibility has included issues and pull requests
 such as:
@@ -147,7 +148,7 @@ such as:
   in `ts-safeql/safeql`
 - [Recognize referential actions as keywords in ON
   UPDATE/DELETE](https://github.com/sql-formatter-org/sql-formatter/pull/849)
-  (`sql-formatter-org/sql-formatter`)
+  in `sql-formatter-org/sql-formatter`
 
 Encouraging adoption of new technologies has also ranged across
 multiple topics, but a heavy focus has been ESM, including
@@ -185,10 +186,10 @@ contributed short proposal notes:
 
 ## Tips for Contributors
 
-There are plenty of resources on how to get started to contribute
-to open source, so I won't write another guide on that. But if
-you're looking for a good place to start, try [How to Contribute
-to Open Source by Open Source
+There are plenty of resources on how to get started with open
+source, so I won't write another guide on that. If you're looking
+for a good place to start, try [How to Contribute to Open Source
+by Open Source
 Guides](https://opensource.guide/how-to-contribute/).
 
 Here are my more personal anecdotes and tips for contributors:
@@ -205,43 +206,42 @@ Here are my more personal anecdotes and tips for contributors:
      add your approach if it's not already there
    - if you find a small issue, report or fix it
    - get into the habit of looking through the issues and pull
-     requests of projects you use - soon you will be contributing
+     requests of projects you use - soon you'll be contributing
      to a wide range of projects
 3. Superpower: match the style and philosophy of the project
    - read the code of the project and try to match the style
-   - if there is a philosophy or goal of the project, align your
-     contribution with that
+   - if there's a philosophy or goal, align your contribution
+     with that
    - this avoids wasting time on back and forth
 4. Superpower: review your own contributions
-   - read your own contributions as if you were the reviewer
+   - read your own code as if you're the reviewer
    - try to find issues and fix them before submitting
    - comment on surprising or unusual parts of your contribution
 5. Don't fall in love with your solution
    - be open to feedback and changes
-   - acknowledge that it's possible your solution is not the best
-     one, or may not be accepted at all
-6. Use AI carefully in your open source contributions
+   - acknowledge that your solution might not be the best one, or
+     may not be accepted at all
+6. Use AI carefully in your contributions
    - AI can help you understand the codebase and suggest changes
-     which match the style
-   - review AI code carefully: AI can generate low quality code
-     aka "AI slop"
-   - using tools like AI can make the difference between a
-     contribution and no contribution
+     that match the style
+   - review AI-generated code carefully — it can produce
+     low-quality output (aka "AI slop")
+   - using AI tools can make the difference between contributing
+     and not contributing
 7. Use the [Refined
    GitHub](https://github.com/refined-github/refined-github)
    browser extension to simplify the GitHub interface and add
-   missing features
-8. Report issues with enough information to improve their
-   usefulness, even if the project doesn't ask for it
-   - write about what you were trying to do
-   - write about what you observed
-   - write about what you expected to happen
-   - include a reproduction repo or code
+   helpful features
+8. Report issues with enough information to make them actionable
+   - explain what you were trying to do
+   - describe what you observed
+   - describe what you expected
+   - include a minimal reproduction repo or code block
    - include the steps to reproduce the issue
    - include relevant version numbers
-   - prefer text in code blocks over screenshots
+   - prefer code blocks over screenshots
    - think through the problem and provide a guess of what the
-     issue is, near the end of the issue
+     problem might be near the end of the issue
 
 ## Wishes from Maintainers
 
@@ -250,23 +250,22 @@ opinions on how projects can optimize their CX (Contributor
 Experience) for new contributors:
 
 1. Optimize for contributions from web clients such as the GitHub
-   web client
-   - avoid requiring a local dev environment including code
-     execution in a terminal, also for tests
-2. Optimize for contributions from AI tools
-   - describe the project's style and instructions for LLMs
-     (Large Language Models) in standard locations such as
+   web interface
+   - avoid requiring a full local dev environment or terminal
+     execution, also for changes to tests
+2. Optimize for AI-assisted contributions
+   - describe the project's style and provide instructions for
+     LLMs in standard locations like
      `.vscode/copilot-instructions.md` or `.cursor/rules/*.mdc`
-3. Simplify docs and make them easier to understand for a wide
-   audience
+3. Simplify documentation and make it easier to understand for a
+   wide audience
    - avoid jargon
-   - prioritize clarity over purity / brevity: short explanations
-     are often not enough for a wide audience
-   - don't avoid repetition: repetition can improve speed of
-     navigating and understanding docs
-   - embed running examples and playgrounds in the docs
-4. Provide a bug reproduction template to reduce effort of
-   reporting bugs
+   - prioritize clarity over purity / brevity — short
+     explanations are often not enough for a wide audience
+   - don't avoid repetition — it can helps with navigation and
+     comprehension
+   - embed runnable examples and playgrounds in the docs
+4. Provide a bug reproduction template
    - example: [Next.js repro
      template](https://codesandbox.io/p/devbox/github/vercel/next.js/tree/canary/examples/reproduction-template)
    - example: [Reproduction Template of ESLint
