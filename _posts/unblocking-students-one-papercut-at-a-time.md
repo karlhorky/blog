@@ -102,8 +102,8 @@ During a June 2024 iteration on our Expo / React Native lecture,
 we switched the scaffolder and template we used and dropped the
 obsolete config in `.npmrc`:
 
-- [Switch to create-expo-app + blank-typescript, remove .npmrc
-  cmds ](https://github.com/upleveled/system-setup/pull/79) in
+- [Switch to `create-expo-app` + `blank-typescript`, remove `.npmrc`
+  cmds](https://github.com/upleveled/system-setup/pull/79) in
   `upleveled/system-setup`
 
 In January 2023, while adopting the Next.js App Router and
@@ -226,6 +226,15 @@ Here are my more personal anecdotes and tips for contributors:
      aka "AI slop"
    - using tools like AI can make the difference between a
      contribution and no contribution
+7. Use [Refined GitHub](https://github.com/refined-github/refined-github) (browser extension) to simplify the GitHub interface and add useful missing features
+8. Report issues with enough information to improve their usefulness, even if the project doesn't ask for it
+   - write about what you were trying to do
+   - write about what you observed
+   - write about what you expected to happen
+   - think through the problem and provide a guess of what the issue is
+   - include a reproduction repo or code
+   - include the steps to reproduce the issue
+   - include relevant version numbers
 
 ## Wishes from Maintainers
 
