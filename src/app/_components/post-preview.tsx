@@ -18,7 +18,7 @@ export function PostPreview({ title, date, excerpt, slug }: Props) {
         <h3 className="text-foreground pt-8 text-base font-semibold tracking-tight lg:pt-0">
           {title}
         </h3>
-        <div className="prose prose-slate prose-a:relative prose-a:z-10 text-foreground mt-2 mb-4 line-clamp-3">
+        <div className="prose prose-slate prose-a:relative prose-a:z-10 text-foreground mt-2 mb-4 text-balance sm:line-clamp-3">
           {excerpt}
         </div>
         <dl className="absolute top-0 left-0 lg:right-full lg:left-auto lg:mr-[calc(6.5rem+1px)]">

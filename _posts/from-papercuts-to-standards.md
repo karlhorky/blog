@@ -1,7 +1,6 @@
 ---
-title: 'Unblocking Students and Evolving the Ecosystem'
-excerpt2: 'Small bugs in open source might seem not worth fixing, but for students, they can be real blockers. By reporting and fixing these “papercuts” in open source projects, I aim to remove barriers so students can focus on learning.'
-excerpt: 'My effort to fix small bugs (papercuts) and support ecosystem, with an aim of removing barriers for students and encouraging open source adoption'
+title: 'From Papercuts to Standards'
+excerpt: 'Whether unblocking students, fixing upgrade breakage or supporting ecosystem evolution, I aim to make open source more accessible and software simpler'
 date: '2025-05-06'
 ---
 
@@ -12,7 +11,8 @@ Initiative on OpenSource.net for Maintainer Month 2025.
 
 Hi, I'm Karl Horky ([GitHub](https://github.com/karlhorky),
 [LinkedIn](https://www.linkedin.com/in/karlhorky/)), Technical
-Founder at [UpLeveled](https://upleveled.io).
+Founder at [UpLeveled](https://upleveled.io) - tech education
+programs for all skill levels.
 
 In an educational landscape of AI-generated solutions,
 disconnected islands of knowledge and barriers to entry, I focus
@@ -21,10 +21,10 @@ and contributing to open source.
 
 ## Then and Now
 
-I've been in open source for over 13 years, and in tech for over
-20, through which I used a range of languages and technologies,
-from QBasic and C to Perl, PHP, Python, Ruby on Rails and then
-finally on to JavaScript / TypeScript.
+I've been in open source for over 13 years, and in tech for more
+than 20, through which I have used a range of languages and
+technologies, from QBasic and C to Perl, PHP, Python, Ruby on
+Rails and then finally on to JavaScript / TypeScript.
 
 Now I mostly work with TypeScript, React, Next.js, Node.js, SQL
 and Bash.
@@ -44,9 +44,8 @@ Through my work in education, I've become interested in:
 ## UpLeveled and Open Source
 
 My work at UpLeveled has focused on designing, developing and
-delivering accessible curricula for both beginners and more
-experienced engineers, including promoting getting involved in
-open source.
+delivering accessible curricula for students ranging from
+beginners to more experienced engineers.
 
 As part of this work, we maintain some of our own open source
 projects:
@@ -99,15 +98,6 @@ Another area of focus for UpLeveled is keeping up to date:
 Some examples of issues and pull requests related to these
 upgrades:
 
-During a June 2024 iteration on our Expo / React Native lecture,
-we switched the scaffolder and template we used and dropped the
-obsolete config in `.npmrc`:
-
-- [Switch to `create-expo-app` + `blank-typescript`, remove
-  `.npmrc`
-  cmds](https://github.com/upleveled/system-setup/pull/79) in
-  `upleveled/system-setup`
-
 In January 2023, while adopting the Next.js App Router and
 switching our material to React Server Components, we found that
 Route Handlers did not have the same capabilities to check return
@@ -117,10 +107,19 @@ types using TypeScript, and contributed this feature to Next.js:
   `NextResponse`](https://github.com/vercel/next.js/pull/47526)
   in `vercel/next.js`
 
+During a June 2024 iteration on our Expo / React Native lecture,
+we switched the scaffolder and template we used and dropped the
+obsolete config in `.npmrc`:
+
+- [Switch to `create-expo-app` + `blank-typescript`, remove
+  `.npmrc`
+  cmds](https://github.com/upleveled/system-setup/pull/79) in
+  `upleveled/system-setup`
+
 More recently, a March 2025 upgrade to
 `eslint-import-resolver-typescript@4.2.0` caused resolution
 errors for Bun modules like `bun:test` while using
-`eslint-plugin-import-x`, which I fixed with a documentation
+`eslint-plugin-import-x`, which we fixed with a documentation
 update:
 
 - [Document eslint-import-resolver-typescript `bun` option, fix
@@ -151,8 +150,8 @@ such as:
   in `sql-formatter-org/sql-formatter`
 
 Encouraging adoption of new technologies has also ranged across
-multiple topics, but a heavy focus has been ESM, including
-TypeScript module resolution:
+multiple topics, but an area which has often required additional
+attention has been ESM, including TypeScript module resolution:
 
 - ["module": "node16" error: `This expression is not
 callable`](https://github.com/postcss/postcss/issues/1814) in
@@ -166,9 +165,9 @@ callable`](https://github.com/postcss/postcss/issues/1814) in
   `vercel/next.js`
 
 While we have not yet invested the time to become deeply involved
-in shaping standards by writing spec docs or becoming a champion,
-we have at times added feedback in existing discussions or
-contributed short proposal notes:
+in shaping standards by activities like writing spec docs or
+becoming a TC39 champion, we have at times added feedback in
+existing discussions or contributed short proposal notes:
 
 - [Skip parameters in function parameter
   lists](https://bsky.app/profile/karlhorky.com/post/3lomlbj5gts2m)
@@ -186,20 +185,32 @@ contributed short proposal notes:
 
 ## Tips for Contributors
 
+I can highly recommend getting involved in open source - benefits
+include the ability to:
+
+- learn about new technologies
+- learn how to communicate and work with others
+- network with developers in the community
+- become familiar with interesting projects
+
 There are plenty of resources on how to get started with open
 source, so I won't write another guide on that. If you're looking
 for a good place to start, try [How to Contribute to Open Source
 by Open Source
 Guides](https://opensource.guide/how-to-contribute/).
 
-Here are my more personal anecdotes and tips for contributors:
+Here are my more personal field notes for contributors:
 
-1. Benefits of open source include the ability to:
-   - learn about new technologies
-   - learn how to communicate and work with others
-   - network with developers in the community
-   - become familiar with interesting projects
-2. Start small, but contribute widely
+1. Superpower: match the style and philosophy of the project
+   - read the code of the project and try to match the style
+   - also match the philosophy or goal of the project, if there
+     is one
+   - avoids wasting time on back and forth
+2. Superpower: review your own contributions
+   - read your own code as if you're the reviewer
+   - try to find issues and fix them before submitting
+   - comment on surprising or unusual parts of your contribution
+3. Start small, but contribute widely
    - to ease into open source, make small contributions - small
      contributions are also helpful for others
    - if you resolve or work around an issue others have reported,
@@ -208,31 +219,22 @@ Here are my more personal anecdotes and tips for contributors:
    - get into the habit of looking through the issues and pull
      requests of projects you use - soon you'll be contributing
      to a wide range of projects
-3. Superpower: match the style and philosophy of the project
-   - read the code of the project and try to match the style
-   - if there's a philosophy or goal, align your contribution
-     with that
-   - this avoids wasting time on back and forth
-4. Superpower: review your own contributions
-   - read your own code as if you're the reviewer
-   - try to find issues and fix them before submitting
-   - comment on surprising or unusual parts of your contribution
-5. Don't fall in love with your solution
+4. Don't fall in love with your solution
    - be open to feedback and changes
    - acknowledge that your solution might not be the best one, or
      may not be accepted at all
-6. Use AI carefully in your contributions
+5. Use AI carefully in your contributions
    - AI can help you understand the codebase and suggest changes
      that match the style
-   - review AI-generated code carefully — it can produce
-     low-quality output (aka "AI slop")
+   - review AI-generated code carefully - it can produce
+     low-quality output aka "AI slop"
    - using AI tools can make the difference between contributing
      and not contributing
-7. Use the [Refined
+6. Use the [Refined
    GitHub](https://github.com/refined-github/refined-github)
    browser extension to simplify the GitHub interface and add
    helpful features
-8. Report issues with enough information to make them actionable
+7. Report issues with enough information to make them actionable
    - explain what you were trying to do
    - describe what you observed
    - describe what you expected
@@ -252,7 +254,7 @@ Experience) for new contributors:
 1. Optimize for contributions from web clients such as the GitHub
    web interface
    - avoid requiring a full local dev environment or terminal
-     execution, also for changes to tests
+     execution, also for contributions changing tests
 2. Optimize for AI-assisted contributions
    - describe the project's style and provide instructions for
      LLMs in standard locations like
@@ -260,9 +262,9 @@ Experience) for new contributors:
 3. Simplify documentation and make it easier to understand for a
    wide audience
    - avoid jargon
-   - prioritize clarity over purity / brevity — short
+   - prioritize clarity over purity / brevity - short
      explanations are often not enough for a wide audience
-   - don't avoid repetition — it can helps with navigation and
+   - don't avoid repetition - it can help with navigation and
      comprehension
    - embed runnable examples and playgrounds in the docs
 4. Provide a bug reproduction template
