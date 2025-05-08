@@ -23,7 +23,7 @@ and contributing to open source.
 I've been in open source for over 13 years, and in tech for over
 20, through which I used a range of languages and technologies,
 from QBasic and C to Perl, PHP, Python, Ruby on Rails and then
-finally on to JavaScript.
+finally on to JavaScript/TypeScript.
 
 Now I mostly work with TypeScript, React, Next.js, Node.js, SQL
 and Bash.
