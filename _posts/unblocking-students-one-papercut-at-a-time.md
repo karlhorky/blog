@@ -37,7 +37,7 @@ Through my work in education, I've become interested in:
   [Postgres.js](https://github.com/porsager/postgres)
 - secure-by-default and pit-of-success approaches to building
   safe and correct software, eg. enforcement and guidance through
-  linting rules and expressive and strict API design
+  linting rules and expressive, strict API design
 - patterns to reduce abstraction and indirection in code
 
 ## UpLeveled and Open Source
