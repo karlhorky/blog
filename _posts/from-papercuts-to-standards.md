@@ -258,7 +258,7 @@ Experience) for new contributors:
 2. Optimize for AI-assisted contributions
    - describe the project's style and provide instructions for
      LLMs in standard locations like
-     `.vscode/copilot-instructions.md` or `.cursor/rules/*.mdc`
+     `.github/instructions/*.instructions.md` or `.cursor/rules/*.mdc`
 3. Simplify documentation and make it easier to understand for a
    wide audience
    - avoid jargon
