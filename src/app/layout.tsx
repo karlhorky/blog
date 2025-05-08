@@ -4,7 +4,10 @@ import type { ReactNode } from 'react';
 import { ThemeProvider } from './_components/ThemeProvider';
 
 export const metadata: Metadata = {
-  title: `Karl Horky's Blog`,
+  title: {
+    default: "Karl Horky's Blog",
+    template: "%s | Karl Horky's Blog",
+  },
   description: `Tech education: curriculum design, open source, community building`,
   openGraph: {
     images: [

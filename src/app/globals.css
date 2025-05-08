@@ -141,7 +141,7 @@ button {
     --popover-foreground: 210 40% 98%;
 
     --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 75%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -165,8 +165,38 @@ button {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+
+  a {
+    @apply hover:text-primary-foreground underline-offset-4 transition-colors;
+  }
+
+  article a {
+    @apply underline;
+  }
+
+  p {
+    @apply my-5;
+  }
+
+  ul,
+  ol {
+    @apply pl-6;
+  }
+
+  ol li {
+    @apply list-decimal;
+  }
+
+  ul li {
+    @apply list-disc;
+  }
+
+  li {
+    @apply mt-2;
   }
 }
 
@@ -175,40 +205,40 @@ button {
 }
 
 .markdown ul {
-  @apply leading-7 my-6 ml-6 list-disc [&>li]:mt-2;
+  @apply my-6 list-disc leading-7;
+}
+
+.markdown ol ol,
+.markdown ol ul,
+.markdown ul ol,
+.markdown ul ul {
+  @apply my-0;
 }
 
 .markdown p {
-  @apply leading-7 mt-6 text-foreground;
+  @apply text-foreground leading-7;
 }
 
 .markdown blockquote {
-  @apply mt-6 border-l-2 pl-6 italic
-  border-border text-muted-foreground;
+  @apply border-border text-muted-foreground mt-6 border-l-2 pl-6 italic;
 }
 
 .markdown h1 {
-  @apply scroll-m-20 text-4xl font-extrabold
-  tracking-tight lg:text-5xl text-foreground;
+  @apply text-foreground scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
 }
 
 .markdown h2 {
-  @apply scroll-m-20 border-b mt-8 pb-2 text-3xl
-  font-semibold tracking-tight first:mt-0 text-foreground
-border-border;
+  @apply text-foreground border-border mt-8 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0;
 }
 
 .markdown h3 {
-  @apply mt-8 scroll-m-20 text-2xl font-semibold
-  tracking-tight text-foreground;
+  @apply text-foreground mt-8 scroll-m-20 text-2xl font-semibold tracking-tight;
 }
 
 .markdown h4 {
-  @apply scroll-m-20 text-xl font-semibold
-  tracking-tight text-foreground;
+  @apply text-foreground scroll-m-20 text-xl font-semibold tracking-tight;
 }
 
 .markdown code {
-  @apply relative rounded bg-muted px-[0.3rem]
-  py-[0.2rem] font-mono text-sm font-semibold text-foreground;
+  @apply bg-muted text-foreground relative rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold;
 }
