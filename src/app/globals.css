@@ -182,12 +182,17 @@ button {
     @apply my-5;
   }
 
+  ul,
   ol {
     @apply pl-6;
   }
 
   ol li {
     @apply list-decimal;
+  }
+
+  ul li {
+    @apply list-disc;
   }
 
   li {
@@ -200,9 +205,12 @@ button {
 }
 
 .markdown ul {
-  @apply my-6 ml-6 list-disc leading-7;
+  @apply my-6 list-disc leading-7;
 }
 
+.markdown ol ol,
+.markdown ol ul,
+.markdown ul ol,
 .markdown ul ul {
   @apply my-0;
 }

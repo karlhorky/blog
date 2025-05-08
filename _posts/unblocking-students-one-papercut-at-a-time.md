@@ -23,7 +23,7 @@ and contributing to open source.
 I've been in open source for over 13 years, and in tech for over
 20, through which I used a range of languages and technologies,
 from QBasic and C to Perl, PHP, Python, Ruby on Rails and then
-finally on to JavaScript/TypeScript.
+finally on to JavaScript / TypeScript.
 
 Now I mostly work with TypeScript, React, Next.js, Node.js, SQL
 and Bash.
@@ -47,8 +47,8 @@ delivering accessible curricula for both beginners and more
 experienced engineers, including promoting getting involved in
 open source.
 
-As part of the curricula work, we maintain some of our own open
-source projects:
+As part of this work, we maintain some of our own open source
+projects:
 
 - [Preflight](https://github.com/upleveled/preflight): command
   line interface for students to check their code quality
@@ -78,7 +78,7 @@ One common type of problem we encounter is the "papercut":
 3. to students, potentially a blocker to their learning
 
 These papercuts can include errors during setup steps,
-documentation issues, small bugs, and even security issues.
+documentation issues, small bugs and even security issues.
 
 By fixing these papercuts, we can help students focus on learning
 and building projects, and raise all boats by contributing the
@@ -102,7 +102,8 @@ During a June 2024 iteration on our Expo / React Native lecture,
 we switched the scaffolder and template we used and dropped the
 obsolete config in `.npmrc`:
 
-- [Switch to `create-expo-app` + `blank-typescript`, remove `.npmrc`
+- [Switch to `create-expo-app` + `blank-typescript`, remove
+  `.npmrc`
   cmds](https://github.com/upleveled/system-setup/pull/79) in
   `upleveled/system-setup`
 
@@ -204,8 +205,8 @@ Here are my more personal anecdotes and tips for contributors:
      add your approach if it's not already there
    - if you find a small issue, report or fix it
    - get into the habit of looking through the issues and pull
-     requests of projects you use - soon you will contributing to
-     a wide range of projects
+     requests of projects you use - soon you will be contributing
+     to a wide range of projects
 3. Superpower: match the style and philosophy of the project
    - read the code of the project and try to match the style
    - if there is a philosophy or goal of the project, align your
@@ -226,36 +227,55 @@ Here are my more personal anecdotes and tips for contributors:
      aka "AI slop"
    - using tools like AI can make the difference between a
      contribution and no contribution
-7. Use [Refined GitHub](https://github.com/refined-github/refined-github) (browser extension) to simplify the GitHub interface and add useful missing features
-8. Report issues with enough information to improve their usefulness, even if the project doesn't ask for it
+7. Use the [Refined
+   GitHub](https://github.com/refined-github/refined-github)
+   browser extension to simplify the GitHub interface and add
+   missing features
+8. Report issues with enough information to improve their
+   usefulness, even if the project doesn't ask for it
    - write about what you were trying to do
    - write about what you observed
    - write about what you expected to happen
-   - think through the problem and provide a guess of what the issue is
    - include a reproduction repo or code
    - include the steps to reproduce the issue
    - include relevant version numbers
+   - prefer text in code blocks over screenshots
+   - think through the problem and provide a guess of what the
+     issue is, near the end of the issue
 
 ## Wishes from Maintainers
 
-During my time contributing to open source, I have also developed opinions on how projects can optimize their CX (Contributor Experience) for new contributors:
+During my time contributing to open source, I have also developed
+opinions on how projects can optimize their CX (Contributor
+Experience) for new contributors:
 
-1. Optimize for contributions from non-desktop clients such as the GitHub web client
-   - avoid requiring a local dev environment including code execution in a
-     terminal, also for tests
+1. Optimize for contributions from web clients such as the GitHub
+   web client
+   - avoid requiring a local dev environment including code
+     execution in a terminal, also for tests
 2. Optimize for contributions from AI tools
-   - encode your style and instructions for LLMs (Large Language Models) in standard locations such as
-     `.vscode/copilot-instructions.md` or `cursorrules/*.mdc`
-3. Simplify docs and make them easier to understand for a wide audience
+   - describe the project's style and instructions for LLMs
+     (Large Language Models) in standard locations such as
+     `.vscode/copilot-instructions.md` or `.cursor/rules/*.mdc`
+3. Simplify docs and make them easier to understand for a wide
+   audience
    - avoid jargon
-   - prioritize clarity over purity or brevity: short explanations are often not enough for a wide audience
-   - don't avoid repetition: repetition can make a big difference for quickly navigating docs
+   - prioritize clarity over purity / brevity: short explanations
+     are often not enough for a wide audience
+   - don't avoid repetition: repetition can improve speed of
+     navigating and understanding docs
    - embed running examples and playgrounds in the docs
-4. Provide a bug reproduction template to reduce effort of reporting bugs
-   - example: [Next.js repro template](https://codesandbox.io/p/devbox/github/vercel/next.js/tree/canary/examples/reproduction-template)
-   - example: [Reproduction Template of ESLint Stylistic](https://github.com/eslint-community/eslint-stylistic-repro-template)
-   - example: [GitHub template for creating a Rspack minimal reproducible example](https://github.com/web-infra-dev/rspack-repro)
-   - more examples: [Awesome Open Source Automation](https://github.com/karlhorky/awesome-open-source-automation)
+4. Provide a bug reproduction template to reduce effort of
+   reporting bugs
+   - example: [Next.js repro
+     template](https://codesandbox.io/p/devbox/github/vercel/next.js/tree/canary/examples/reproduction-template)
+   - example: [Reproduction Template of ESLint
+     Stylistic](https://github.com/eslint-community/eslint-stylistic-repro-template)
+   - example: [GitHub template for creating a Rspack minimal
+     reproducible
+     example](https://github.com/web-infra-dev/rspack-repro)
+   - more examples: [Awesome Open Source
+     Automation](https://github.com/karlhorky/awesome-open-source-automation)
 
 ## Thanks
 
