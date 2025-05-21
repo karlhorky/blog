@@ -4,8 +4,10 @@ excerpt: 'Whether unblocking students, fixing upgrade breakage or supporting eco
 date: '2025-05-06'
 ---
 
-The following article is also published by the Open Source
-Initiative on OpenSource.net for Maintainer Month 2025.
+The following article is also published as [a maintainer story on
+the Open Source Initiative's
+opensource.org](https://opensource.org/maintainers/karlhorky), as
+part of Maintainer Month 2025.
 
 ---
 
@@ -258,7 +260,8 @@ Experience) for new contributors:
 2. Optimize for AI-assisted contributions
    - describe the project's style and provide instructions for
      LLMs in standard locations like
-     `.github/instructions/*.instructions.md` or `.cursor/rules/*.mdc`
+     `.github/instructions/*.instructions.md` or
+     `.cursor/rules/*.mdc`
 3. Simplify documentation and make it easier to understand for a
    wide audience
    - avoid jargon
