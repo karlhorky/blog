@@ -46,7 +46,8 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "@tailwindcss/oxide",
-      "sharp"
+      "sharp",
+      "unrs-resolver"
     ],
     "overrides": {
       "@types/react": "19.1.8",
