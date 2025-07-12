@@ -6,8 +6,10 @@ date: '2025-05-06'
 
 The following article is also published as [a maintainer story on
 the Open Source Initiative's
-opensource.org](https://opensource.org/maintainers/karlhorky), as
-part of Maintainer Month 2025.
+opensource.org](https://opensource.org/maintainers/karlhorky) and
+as a story in [the maintaine.rs book](https://maintaine.rs/)
+([web version](https://maintaine.rs/karlhorky)), as part of
+Maintainer Month 2025.
 
 ---
 
