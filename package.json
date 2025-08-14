@@ -27,19 +27,19 @@
     "tailwindcss-animate": "1.0.7"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "4.1.11",
-    "@types/node": "24.2.0",
-    "@types/react": "19.1.9",
+    "@tailwindcss/postcss": "4.1.12",
+    "@types/node": "24.2.1",
+    "@types/react": "19.1.10",
     "@types/react-dom": "19.1.7",
-    "eslint": "9.32.0",
-    "eslint-config-upleveled": "9.2.12",
+    "eslint": "9.33.0",
+    "eslint-config-upleveled": "9.2.13",
     "postcss": "8.5.6",
     "postcss-load-config": "6.0.1",
     "prettier": "3.6.2",
     "prettier-plugin-tailwindcss": "0.6.14",
     "stylelint": "16.23.1",
     "stylelint-config-upleveled": "1.1.10",
-    "tailwindcss": "4.1.11",
+    "tailwindcss": "4.1.12",
     "typescript": "5.9.2"
   },
   "packageManager": "pnpm@10.14.0+sha512.ad27a79641b49c3e481a16a805baa71817a04bbe06a38d17e60e2eaee83f6a146c6a688125f5792e48dd5ba30e7da52a5cda4c3992b9ccf333f9ce223af84748",
@@ -50,7 +50,7 @@
       "unrs-resolver"
     ],
     "overrides": {
-      "@types/react": "19.1.9",
+      "@types/react": "19.1.10",
       "@types/react-dom": "19.1.7"
     }
   }
