@@ -57,10 +57,18 @@
   margin-inline: auto;
   padding-inline: 2rem;
   @media (width >= --theme(--breakpoint-sm)) {
-    max-width: none;
+    /* stylelint-disable nesting-selector-no-missing-scoping-root -- TODO: Modify stylelint-config-upleveled to configure ignoreAtRules in rule once it exists https://github.com/stylelint/stylelint/issues/8728 https://github.com/stylelint/stylelint/issues/8406#issuecomment-3185835523 */
+    & {
+      max-width: none;
+    }
+    /* stylelint-enable nesting-selector-no-missing-scoping-root -- TODO: Modify stylelint-config-upleveled to configure ignoreAtRules in rule once it exists https://github.com/stylelint/stylelint/issues/8728 https://github.com/stylelint/stylelint/issues/8406#issuecomment-3185835523 */
   }
   @media (width >= 1400px) {
-    max-width: 1400px;
+    /* stylelint-disable nesting-selector-no-missing-scoping-root -- TODO: Modify stylelint-config-upleveled to configure ignoreAtRules in rule once it exists https://github.com/stylelint/stylelint/issues/8728 https://github.com/stylelint/stylelint/issues/8406#issuecomment-3185835523 */
+    & {
+      max-width: 1400px;
+    }
+    /* stylelint-enable nesting-selector-no-missing-scoping-root -- TODO: Modify stylelint-config-upleveled to configure ignoreAtRules in rule once it exists https://github.com/stylelint/stylelint/issues/8728 https://github.com/stylelint/stylelint/issues/8406#issuecomment-3185835523 */
   }
 }
 
