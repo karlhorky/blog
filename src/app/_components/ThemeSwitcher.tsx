@@ -1,15 +1,16 @@
 'use client';
 
 import { useTheme } from 'next-themes';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Moon, Sun } from './icons';
 
 export function ThemeSwitcher() {
+  const ref = useRef<HTMLDivElement>(null);
   const { setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    setMounted(!!ref.current);
   }, []);
 
   if (!mounted) {
@@ -19,7 +20,7 @@ export function ThemeSwitcher() {
   const isDark = resolvedTheme === 'dark';
 
   return (
-    <div className="flex gap-2">
+    <div className="flex gap-2" ref={ref}>
       <button
         onClick={() => setTheme('light')}
         aria-label="Switch to light mode"
