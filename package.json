@@ -15,10 +15,10 @@
     "clsx": "2.1.1",
     "date-fns": "4.1.0",
     "gray-matter": "4.0.3",
-    "next": "15.5.3",
+    "next": "15.5.4",
     "next-themes": "0.4.6",
-    "react": "19.1.1",
-    "react-dom": "19.1.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
     "rehype-external-links": "3.0.0",
     "rehype-stringify": "10.0.1",
     "remark": "15.0.1",
@@ -27,22 +27,22 @@
     "tailwindcss-animate": "1.0.7"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "4.1.13",
-    "@types/node": "24.5.2",
-    "@types/react": "19.1.13",
-    "@types/react-dom": "19.1.9",
-    "eslint": "9.35.0",
-    "eslint-config-upleveled": "9.2.15",
+    "@tailwindcss/postcss": "4.1.14",
+    "@types/node": "24.7.2",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "eslint": "9.37.0",
+    "eslint-config-upleveled": "9.4.2",
     "postcss": "8.5.6",
     "postcss-load-config": "6.0.1",
     "prettier": "3.6.2",
     "prettier-plugin-tailwindcss": "0.6.14",
-    "stylelint": "16.24.0",
-    "stylelint-config-upleveled": "2.0.2",
-    "tailwindcss": "4.1.13",
-    "typescript": "5.9.2"
+    "stylelint": "16.25.0",
+    "stylelint-config-upleveled": "2.0.3",
+    "tailwindcss": "4.1.14",
+    "typescript": "5.9.3"
   },
-  "packageManager": "pnpm@10.17.0+sha512.fce8a3dd29a4ed2ec566fb53efbb04d8c44a0f05bc6f24a73046910fb9c3ce7afa35a0980500668fa3573345bd644644fa98338fa168235c80f4aa17aa17fbef",
+  "packageManager": "pnpm@10.18.2+sha512.9fb969fa749b3ade6035e0f109f0b8a60b5d08a1a87fdf72e337da90dcc93336e2280ca4e44f2358a649b83c17959e9993e777c2080879f3801e6f0d999ad3dd",
   "pnpm": {
     "onlyBuiltDependencies": [
       "@tailwindcss/oxide",
@@ -50,8 +50,8 @@
       "unrs-resolver"
     ],
     "overrides": {
-      "@types/react": "19.1.13",
-      "@types/react-dom": "19.1.9"
+      "@types/react": "19.2.2",
+      "@types/react-dom": "19.2.2"
     }
   }
 }
