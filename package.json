@@ -15,10 +15,10 @@
     "clsx": "2.1.1",
     "date-fns": "4.1.0",
     "gray-matter": "4.0.3",
-    "next": "15.5.9",
+    "next": "16.1.6",
     "next-themes": "0.4.6",
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
     "rehype-external-links": "3.0.0",
     "rehype-stringify": "10.0.1",
     "remark": "15.0.1",
@@ -29,8 +29,8 @@
   "devDependencies": {
     "@tailwindcss/postcss": "4.1.15",
     "@types/node": "25.0.1",
-    "@types/react": "19.2.2",
-    "@types/react-dom": "19.2.2",
+    "@types/react": "19.2.10",
+    "@types/react-dom": "19.2.3",
     "eslint": "9.37.0",
     "eslint-config-upleveled": "9.4.2",
     "postcss": "8.5.6",
@@ -42,11 +42,11 @@
     "tailwindcss": "4.1.15",
     "typescript": "5.9.3"
   },
-  "packageManager": "pnpm@10.18.3+sha512.bbd16e6d7286fd7e01f6b3c0b3c932cda2965c06a908328f74663f10a9aea51f1129eea615134bf992831b009eabe167ecb7008b597f40ff9bc75946aadfb08d",
+  "packageManager": "pnpm@10.28.2+sha512.41872f037ad22f7348e3b1debbaf7e867cfd448f2726d9cf74c08f19507c31d2c8e7a11525b983febc2df640b5438dee6023ebb1f84ed43cc2d654d2bc326264",
   "pnpm": {
     "overrides": {
-      "@types/react": "19.2.2",
-      "@types/react-dom": "19.2.2"
+      "@types/react": "19.2.10",
+      "@types/react-dom": "19.2.3"
     }
   }
 }

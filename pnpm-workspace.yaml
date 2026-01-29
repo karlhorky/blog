@@ -1,6 +1,8 @@
-onlyBuiltDependencies:
-  - sharp
-  - unrs-resolver
+# Block transitive dependencies from using git repositories or
+# direct tarball URLs
+# - https://pnpm.io/settings#blockexoticsubdeps
+blockExoticSubdeps: true
+
 # Prevents installation of packages newer than 7 days
 # to mitigate supply chain risks
 # - https://pnpm.io/settings#minimumreleaseage
@@ -9,6 +11,36 @@ minimumReleaseAgeExclude:
   - '@upleveled/*'
   - eslint-config-upleveled
   - stylelint-config-upleveled
+  # - https://github.com/vercel/next.js/security/advisories/GHSA-h25m-26qc-wcjf
+  # - https://github.com/vercel/next.js/security/advisories/GHSA-5f7q-jpqc-wp7h
+  # - https://github.com/vercel/next.js/security/advisories/GHSA-9g9p-9gw9-jx7f
+  - next@16.1.6
+  - '@next/env@16.1.6'
+  - '@next/swc-darwin-arm64@16.1.6'
+  - '@next/swc-darwin-x64@16.1.6'
+  - '@next/swc-linux-arm64-gnu@16.1.6'
+  - '@next/swc-linux-arm64-musl@16.1.6'
+  - '@next/swc-linux-x64-gnu@16.1.6'
+  - '@next/swc-linux-x64-musl@16.1.6'
+  - '@next/swc-win32-arm64-msvc@16.1.6'
+  - '@next/swc-win32-x64-msvc@16.1.6'
+  # - https://github.com/facebook/react/security/advisories/GHSA-83fc-fqcc-2hmg
+  - react@19.2.4
+  - react-dom@19.2.4
+  - react-is@19.2.4
+  - '@types/react@19.2.10'
+
+onlyBuiltDependencies:
+  - sharp
+  - unrs-resolver
+
 # Fail on pnpm ignored build scripts
 # - https://pnpm.io/settings#strictdepbuilds
 strictDepBuilds: true
+
+# Prevent trust level decreases with new versions of dependencies
+# - https://pnpm.io/settings#trustpolicy
+trustPolicy: 'no-downgrade'
+trustPolicyExclude:
+  # first version with provenance: semver@7.5.1
+  - semver@6.3.1
