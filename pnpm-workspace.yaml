@@ -13,8 +13,8 @@ minimumReleaseAgeExclude:
   - stylelint-config-upleveled
   # - https://github.com/vercel/next.js/security/advisories/GHSA-h25m-26qc-wcjf
   # - https://github.com/vercel/next.js/security/advisories/GHSA-5f7q-jpqc-wp7h
-  # - https://github.com/vercel/next.js/security/advisories/GHSA-9g9p-9gw9-jx7f || 16.1.7 || 16.2.3
-  - next@16.1.6 || 16.1.7 || 16.2.3
+  # - https://github.com/vercel/next.js/security/advisories/GHSA-9g9p-9gw9-jx7f || 16.1.7 || 16.2.3 || 16.2.6
+  - next@16.1.6 || 16.1.7 || 16.2.3 || 16.2.6
   - '@next/env@16.1.6'
   - '@next/swc-darwin-arm64@16.1.6'
   - '@next/swc-darwin-x64@16.1.6'
