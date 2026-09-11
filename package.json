@@ -42,11 +42,5 @@
     "tailwindcss": "4.1.15",
     "typescript": "6.0.3"
   },
-  "packageManager": "pnpm@12.3.2",
-  "pnpm": {
-    "overrides": {
-      "@types/react": "19.2.10",
-      "@types/react-dom": "19.2.3"
-    }
-  }
+  "packageManager": "pnpm@12.3.2"
 }
