@@ -1,3 +1,9 @@
+# Allow build scripts for trusted dependencies
+# - https://pnpm.io/settings#allowbuilds
+allowBuilds:
+  sharp: true
+  unrs-resolver: false
+
 # Block transitive dependencies from using git repositories or
 # direct tarball URLs
 # - https://pnpm.io/settings#blockexoticsubdeps
@@ -31,14 +37,6 @@ minimumReleaseAgeExclude:
   - '@types/react@19.2.10'
   # Renovate security update: postcss@8.5.10 || 8.5.12 || 8.5.18
   - postcss@8.5.10 || 8.5.12 || 8.5.18
-
-onlyBuiltDependencies:
-  - sharp
-  - unrs-resolver
-
-# Fail on pnpm ignored build scripts
-# - https://pnpm.io/settings#strictdepbuilds
-strictDepBuilds: true
 
 # Prevent trust level decreases with new versions of dependencies
 # - https://pnpm.io/settings#trustpolicy
